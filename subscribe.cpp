@@ -17,7 +17,7 @@ using namespace exploringBB;
 #define TOPIC       "Bentan01/feeds/project.external-led"
 #define TOPIC_LED   "Bentan01/feeds/project.led"
 #define AUTHMETHOD  "Bentan01"
-#define AUTHTOKEN   "aio_xMRh089wclbukiOk8W1HxnULc2q3"
+#define AUTHTOKEN   "aio_tlTb14MogmEApBUE543F2TVLtuwv"
 #define QOS         1
 #define TIMEOUT     10000L
 #define LED_GPIO    "/sys/class/gpio/gpio60/"
@@ -52,6 +52,7 @@ int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *m
         else if (led.readBrightness() == "0") {
           led.turnOn();
         }
+        else {led.turnOn();}
     }
     MQTTClient_freeMessage(&message);
     MQTTClient_free(topicName);

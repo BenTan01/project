@@ -2,6 +2,7 @@
 echo out > /sys/class/gpio/gpio60/direction
 config-pin p9.16 gpio
 config-pin p8.16 gpio_pu
+echo Build Applications
 g++ -Wall publish.cpp GPIO.cpp AnalogIn.cpp -o publish -lpaho-mqtt3c -pthread
-g++ -Wall subscribe.cpp GPIO.cpp led.cpp -o subcribe -lpaho-mqtt3c -pthread
+g++ -Wall subscribe.cpp GPIO.cpp led.cpp -o subscribe -lpaho-mqtt3c -pthread
 

@@ -12,10 +12,10 @@ using namespace exploringBB;
 //Please replace the username, feed and token with your values
 #define ADDRESS       "tcp://io.adafruit.com"
 #define CLIENTID      "Beagle1"
-#define TOPIC         "Bentan01/feeds/project-group.tantemp"
+#define TOPIC         "Bentan01/feeds/project.temperature"
 #define TOPIC_BUTTON  "Bentan01/feeds/project.beaglebone-button"
 #define AUTHMETHOD    "Bentan01"
-#define AUTHTOKEN     "aio_xMRh089wclbukiOk8W1HxnULc2q3"
+#define AUTHTOKEN     "aio_tlTb14MogmEApBUE543F2TVLtuwv"
 #define QOS           1
 #define TIMEOUT       10000L
 #define ADC_PATH      "/sys/bus/iio/devices/iio:device0/in_voltage"
